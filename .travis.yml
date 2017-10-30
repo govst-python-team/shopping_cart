@@ -1,6 +1,7 @@
 language: python
 python:
   - 3.6
+cache: pip
 before_install:
   - export DJANGO_SETTINGS_MODULE=ShoppingCart.settings
   - export PYTHONPATH=$HOME/builds/govst-python-team/shopping_cart
