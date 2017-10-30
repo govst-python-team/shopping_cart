@@ -1,6 +1,9 @@
 language: python
 python:
   - 3.6
+before_cache:
+  - rm -f $HOME/.cache/pip/log/debug.log
+cache: pip
 before_install:
   - export DJANGO_SETTINGS_MODULE=ShoppingCart.settings
   - export PYTHONPATH=$HOME/builds/govst-python-team/shopping_cart
