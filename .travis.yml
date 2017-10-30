@@ -1,0 +1,20 @@
+language: python
+python:
+  - 3.6
+before_cache:
+  - rm -f $HOME/.cache/pip/log/debug.log
+cache: pip
+before_install:
+  - export DJANGO_SETTINGS_MODULE=ShoppingCart.settings
+  - export PYTHONPATH=$HOME/builds/govst-python-team/shopping_cart
+  - export PIP_USE_MIRRORS=true
+install:
+  - pip install -q Django==1.8.18 --quiet
+  - pip install Pillow==2.9.0 --quiet
+  - pip install coverage --quiet
+  - pip install coveralls
+script:
+  - python manage.py test
+after_success:
+  - coverage report
+  - coveralls
