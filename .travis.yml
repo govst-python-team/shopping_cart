@@ -15,6 +15,6 @@ install:
   - pip install coveralls
 script:
   - python manage.py test
+  - coverage run --source=shop manage.py test
 after_success:
-  - coverage report
   - coveralls
