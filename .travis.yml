@@ -9,10 +9,7 @@ before_install:
   - export PYTHONPATH=$HOME/builds/govst-python-team/shopping_cart
   - export PIP_USE_MIRRORS=true
 install:
-  - pip install -q Django==1.8.18 --quiet
-  - pip install Pillow==2.9.0 --quiet
-  - pip install coverage --quiet
-  - pip install coveralls
+  - pip install -r requirements.txt --quiet
 script:
   - python manage.py test
   - coverage run --source=shop manage.py test

@@ -159,3 +159,9 @@ venv.bak/
 
 
 db\.sqlite3
+
+bin/
+
+pip-selfcheck\.json
+
+pyvenv\.cfg
