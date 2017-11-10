@@ -1,0 +1,4 @@
+Django == 1.8.18
+Pillow == 2.9.0
+coveralls
+pyyaml

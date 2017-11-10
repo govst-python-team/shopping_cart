@@ -1,2 +1,2 @@
-# shopping_cart
+# Shopping Cart [![Coverage Status](https://coveralls.io/repos/github/govst-python-team/shopping_cart/badge.svg?branch=develop)](https://coveralls.io/github/govst-python-team/shopping_cart?branch=develop) [![Build Status](https://travis-ci.org/govst-python-team/shopping_cart.svg?branch=develop)](https://travis-ci.org/govst-python-team/shopping_cart)
 Shopping Cart project written in Django for Object Oriented Programming (Governors State University)

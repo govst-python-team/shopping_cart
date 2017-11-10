@@ -157,3 +157,13 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+
+db\.sqlite3
+
+bin/
+
+pip-selfcheck\.json
+
+pyvenv\.cfg
+/media/
+/include/
