@@ -1,4 +1,4 @@
 Django == 1.8.18
-Pillow == 2.9.0
-coveralls
-pyyaml
+Pillow == 4.3.0
+coveralls == 1.2.0
+pyyaml = 3.12
