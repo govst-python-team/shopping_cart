@@ -10,6 +10,7 @@ class Product(models.Model):
 
     class Meta:
         ordering = ('name',)
+        app_label = 'shop'
 
     def __str__(self):
         return self.name
