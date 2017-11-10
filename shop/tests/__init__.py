@@ -1,1 +1,2 @@
-from .product import ProductModelTest, ProductDetailView
+from .product import ProductModelTest
+from .test_product_detail import TestProductDetail
