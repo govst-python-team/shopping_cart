@@ -1,4 +1,4 @@
 Django == 1.8.18
 Pillow == 4.3.0
 coveralls == 1.2.0
-pyyaml = 3.12
+pyyaml == 3.12
