@@ -6,7 +6,7 @@ from cart.cart import Cart
 
 
 class TestCart(TestCase):
-    fixtures = ['shop']
+    fixtures = ['shop.yaml']
 
     def setUp(self):
         self.request = RequestFactory()
@@ -15,6 +15,3 @@ class TestCart(TestCase):
     def test___init__(self):
         cart = Cart(self.request)
         self.assertEqual(cart.session, self.request.session)
-
-    def test_add(self):
-        self.fail()
