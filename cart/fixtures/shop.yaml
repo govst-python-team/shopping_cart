@@ -1,0 +1,7 @@
+-   fields: {description: 'Harry returns to Hogwarts, still famous and a hero, when
+            strange things start to happen... people are turning to stone and no-one
+            knows what, or who, is doing it.', image: products/2017/11/09/71qBfSSeIRL._SL1100_.jpg,
+        name: 'Harry Potter and the Chamber of Secrets', price: '24.99'}
+    model: shop.product
+    pk: 1
+##[jetbrains/Users/judeibe/Development/djangoShop/ShoppingCart/shop/fixtures/shop.yaml

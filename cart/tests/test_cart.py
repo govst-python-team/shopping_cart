@@ -6,6 +6,8 @@ from cart.cart import Cart
 
 
 class TestCart(TestCase):
+    fixtures = ['shop.yaml']
+
     def setUp(self):
         self.request = RequestFactory()
         self.request.session = {}
