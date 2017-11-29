@@ -1,4 +1,4 @@
-from _decimal import Decimal
+from decimal import Decimal
 
 from django.conf import settings
 
@@ -11,7 +11,7 @@ class Cart(object):
         cart = self.session.get(settings.CART_SESSION_ID)
         if not cart:
             cart = self.session[settings.CART_SESSION_ID] = {}
-            self.cart = cart
+        self.cart = cart
 
     def add(self, product, quantity=1, update_quantity=False):
         product_id = str(product.id)
