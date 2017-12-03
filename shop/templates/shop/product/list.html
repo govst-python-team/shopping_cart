@@ -4,17 +4,32 @@
 {% block title %}Products{% endblock %}
 
 {% block content %}
-  <div id="main" class="product-list">
-      <h1>Products</h1>
-    {% for product in products %}
-      <div class="card">
-        <a href="{{ product.get_absolute_url }}">
+<div id="main" class="product-list">
+  <h1>Products</h1>
+  <div class="row">
+    <div class="col-md-12">
+      {% for product in products %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <h4 class="text-center"><span class="label label-info">Bluray</span></h4>
+          <a href="{{ product.get_absolute_url }}">
             <img src="
-                    {% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}" class="img-thumbnail" style="width:200px">
-        </a>
-          <a href="{{ product.get_absolute_url }}">{{ product.name }}</a><br>
-        ${{ product.price }}
+            {% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}" class="img-responsive" style="width:267px"/>
+          </a>
+          <div class="caption">
+            <div class="row">
+              <div class="col-md-6 col-xs-6">
+                <h3><a href="{{ product.get_absolute_url }}">{{ product.name }}</a></h3>
+              </div>
+              <div class="col-md-6 col-xs-6">
+                <h3><label>${{ product.price }}</label></h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    {% endfor %}
+    </div>
   </div>
+  {% endfor %}
+</div>
 {% endblock %}
