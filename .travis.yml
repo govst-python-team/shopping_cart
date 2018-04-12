@@ -12,6 +12,6 @@ install:
   - pip install -r requirements.txt --quiet
 script:
   - python manage.py test
-  - coverage run --source=shop manage.py test
+  - coverage run --source=shop,cart manage.py test
 after_success:
   - coveralls

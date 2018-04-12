@@ -165,5 +165,5 @@ bin/
 pip-selfcheck\.json
 
 pyvenv\.cfg
-/media/
 /include/
+/Scripts/
